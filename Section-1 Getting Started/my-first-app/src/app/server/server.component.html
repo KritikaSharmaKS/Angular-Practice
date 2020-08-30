@@ -1,1 +1,17 @@
 <p>{{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
+
+<label>Username : </label>
+<input
+    ref-name
+    type="text"
+    class="form-control"
+    [(ngModel)]="username"> 
+<p>{{ username }}</p>    
+    
+<button 
+    class="btn btn-primary" 
+    [disabled] = "!name.value" 
+    (click)="onButtonClick()">
+        Send 
+</button>   
+<br><br><br><br>
