@@ -2,7 +2,6 @@
 
 <label>Username : </label>
 <input
-    ref-name
     type="text"
     class="form-control"
     [(ngModel)]="username"> 
@@ -10,7 +9,7 @@
     
 <button 
     class="btn btn-primary" 
-    [disabled] = "!name.value" 
+    [disabled] = "username === ''" 
     (click)="onButtonClick()">
         Send 
 </button>   
