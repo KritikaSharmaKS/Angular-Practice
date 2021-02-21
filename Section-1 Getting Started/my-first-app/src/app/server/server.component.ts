@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ThrowStmt } from '@angular/compiler';
 
 @Component({
     selector: 'app-server',
